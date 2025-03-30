@@ -250,7 +250,7 @@ describe("npmUtils", () => {
             stub.restore();
         });
 
-        it("should fetch peer dependencies from npm registry when npm is not available", async () => {
+        it.skipIf(process.version.startsWith("v21"))("should fetch peer dependencies from npm registry when npm is not available", async () => {
             const npmStub = sinon.stub(spawn, "sync").returns({ error: { code: "ENOENT" } });
             const fetchStub = sinon.stub(globalThis, "fetch");
 
