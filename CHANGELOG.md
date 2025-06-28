@@ -1,5 +1,61 @@
 # Changelog
 
+## [2.0.0](https://github.com/xbinaryx/create-config/compare/v1.9.0...v2.0.0) (2025-06-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* support flat config ([#81](https://github.com/xbinaryx/create-config/issues/81))
+* Require Node.js ^18.18.0 || ^20.9.0 || >=21.1.0 ([#80](https://github.com/xbinaryx/create-config/issues/80))
+
+### Features
+
+* `eslint-plugin-react` supports ESLint v9 ([#139](https://github.com/xbinaryx/create-config/issues/139)) ([359cf50](https://github.com/xbinaryx/create-config/commit/359cf50eabc0790f3514ffcc1af27c16e297ac0e))
+* add bun package manager ([#78](https://github.com/xbinaryx/create-config/issues/78)) ([903f929](https://github.com/xbinaryx/create-config/commit/903f92984ea6fc84c52638849c6d70ef629ef1d6))
+* add fallback to npm registry API in fetchPeerDependencies ([#155](https://github.com/xbinaryx/create-config/issues/155)) ([d08a7a4](https://github.com/xbinaryx/create-config/commit/d08a7a4dc22fdb6e21af3bd38a319baf4161d74f))
+* add support for `.mts` and `.cts` extensions ([#173](https://github.com/xbinaryx/create-config/issues/173)) ([81ca6e1](https://github.com/xbinaryx/create-config/commit/81ca6e1f45ef4607f119140733310ffef7382cf2))
+* add types for the configuration's default export ([#147](https://github.com/xbinaryx/create-config/issues/147)) ([2eaacd0](https://github.com/xbinaryx/create-config/commit/2eaacd0b52912e43d6926db87a261fa1dddcf586))
+* added yarn and pnpm installations ([#24](https://github.com/xbinaryx/create-config/issues/24)) ([8a26ef4](https://github.com/xbinaryx/create-config/commit/8a26ef4aef266d676302ffad89cb50e90aa8ad7a))
+* avoid empty config warning ([#153](https://github.com/xbinaryx/create-config/issues/153)) ([2a75349](https://github.com/xbinaryx/create-config/commit/2a75349e35d5c4e83168ad83cbc401c1d6c0eaf1))
+* move eslint --init ([#1](https://github.com/xbinaryx/create-config/issues/1)) ([d054ce7](https://github.com/xbinaryx/create-config/commit/d054ce78be788e78046faa8af9cd080721e04232))
+* Output defineConfig in file ([#156](https://github.com/xbinaryx/create-config/issues/156)) ([f607c76](https://github.com/xbinaryx/create-config/commit/f607c7622073d910f92a7edfa295a81da0f3ffdc))
+* remove style guides ([#108](https://github.com/xbinaryx/create-config/issues/108)) ([de1d085](https://github.com/xbinaryx/create-config/commit/de1d085e0c7f465492a352f577e14535cd745399))
+* Require Node.js ^18.18.0 || ^20.9.0 || &gt;=21.1.0 ([#80](https://github.com/xbinaryx/create-config/issues/80)) ([f893814](https://github.com/xbinaryx/create-config/commit/f89381432c95d9b782b31c6685ddcff3d1f181a2))
+* support `--config` ([#38](https://github.com/xbinaryx/create-config/issues/38)) ([a0fa620](https://github.com/xbinaryx/create-config/commit/a0fa6204abdd07525bf0e6bade0f5caf916c60bd))
+* support flat config ([#81](https://github.com/xbinaryx/create-config/issues/81)) ([54ac1f2](https://github.com/xbinaryx/create-config/commit/54ac1f2bb213e60c9b387c01cc674cb03b1aafed))
+* support languages json/markdown/css ([#159](https://github.com/xbinaryx/create-config/issues/159)) ([886f39e](https://github.com/xbinaryx/create-config/commit/886f39e0fd841fd2f15530b141a7b47c025e6c71))
+* support vue3 ([#34](https://github.com/xbinaryx/create-config/issues/34)) ([f446191](https://github.com/xbinaryx/create-config/commit/f44619170e6e8a0881901f844a3604276e1d5424))
+* typescript-eslint v8 has supported eslint v9 ([#141](https://github.com/xbinaryx/create-config/issues/141)) ([f8d9c30](https://github.com/xbinaryx/create-config/commit/f8d9c30af6b8e88a627730745127c48692c98ef6))
+
+
+### Bug Fixes
+
+* add `log.warn` ([#85](https://github.com/xbinaryx/create-config/issues/85)) ([3749cd6](https://github.com/xbinaryx/create-config/commit/3749cd62b780473e767f07a2fa1680d88a9298ad))
+* add cjs override for esm projects (fixes [#59](https://github.com/xbinaryx/create-config/issues/59)) ([#63](https://github.com/xbinaryx/create-config/issues/63)) ([2568629](https://github.com/xbinaryx/create-config/commit/2568629207e3372c6836476e18f6e709e16b13e4))
+* Add custom ts parser for vue projects ([#136](https://github.com/xbinaryx/create-config/issues/136)) ([0098452](https://github.com/xbinaryx/create-config/commit/00984525e17e926dec9184e9bf2502326894f089))
+* add files globs to be linted ([#130](https://github.com/xbinaryx/create-config/issues/130)) ([19d7d6f](https://github.com/xbinaryx/create-config/commit/19d7d6f111db4f78d0fc454662342ea1e810afe9))
+* add warning message for ESLint v9 with npm `--force` flag ([#132](https://github.com/xbinaryx/create-config/issues/132)) ([f8178a8](https://github.com/xbinaryx/create-config/commit/f8178a85e0e2147e2097ab03a87290e53f066a98))
+* cannot find installed eslint ([#15](https://github.com/xbinaryx/create-config/issues/15)) ([da0fcbb](https://github.com/xbinaryx/create-config/commit/da0fcbb760c21a75c530d70391211a80c85a7d60))
+* correct `defineConfig` usage in generated config ([#161](https://github.com/xbinaryx/create-config/issues/161)) ([dfef597](https://github.com/xbinaryx/create-config/commit/dfef5970e29b44395c05b1cffc7b1af5ad86f3af))
+* do not use `--force` when choosing yarn/eslint v8 ([#123](https://github.com/xbinaryx/create-config/issues/123)) ([b377ad7](https://github.com/xbinaryx/create-config/commit/b377ad7828cf39840c5a70d5a018d0368dbb43ec))
+* enable linting `.jsx` files when React is selected ([#126](https://github.com/xbinaryx/create-config/issues/126)) ([6736f3d](https://github.com/xbinaryx/create-config/commit/6736f3dc19682d2cead9aef67b0f27ec51700658))
+* ensure posix-compliant newline at end of generated configs ([#170](https://github.com/xbinaryx/create-config/issues/170)) ([8f18045](https://github.com/xbinaryx/create-config/commit/8f18045ff4da1880a89507aafb5bc20e67436b13))
+* generated vue-ts config ([#64](https://github.com/xbinaryx/create-config/issues/64)) ([0be55af](https://github.com/xbinaryx/create-config/commit/0be55af5f18733d00172348c75ef7bd8e0f2a502))
+* import("eslint") doesn't work ([#9](https://github.com/xbinaryx/create-config/issues/9)) ([48d8025](https://github.com/xbinaryx/create-config/commit/48d8025e1d1b607d95dd93ac261aa9990104851f))
+* missing question to confirm installing dependencies ([#14](https://github.com/xbinaryx/create-config/issues/14)) ([859b379](https://github.com/xbinaryx/create-config/commit/859b379f99daf47790ebd049af7e2e752d635f59)), closes [#11](https://github.com/xbinaryx/create-config/issues/11)
+* not install multi tseslint versions ([#94](https://github.com/xbinaryx/create-config/issues/94)) ([ba1a02c](https://github.com/xbinaryx/create-config/commit/ba1a02c420273f2510dca20ae15c73c55ef1977a))
+* re-trigger release-please ([#145](https://github.com/xbinaryx/create-config/issues/145)) ([6fbb932](https://github.com/xbinaryx/create-config/commit/6fbb9326280847b7ad58fa0049ce086398dede39))
+* remove airbnb/google in style guides when using ts ([#33](https://github.com/xbinaryx/create-config/issues/33)) ([bf2a259](https://github.com/xbinaryx/create-config/commit/bf2a259097157d29748c7c3912b4961824ca1acd))
+* Remove Google style guide ([#82](https://github.com/xbinaryx/create-config/issues/82)) ([9c4214b](https://github.com/xbinaryx/create-config/commit/9c4214bc879cc892fd8ba4f1259c7d0686b0d7c2)), closes [#75](https://github.com/xbinaryx/create-config/issues/75)
+* semver calculations for `defineConfig` import ([#168](https://github.com/xbinaryx/create-config/issues/168)) ([7b7f831](https://github.com/xbinaryx/create-config/commit/7b7f831e876e9f97ded754295ecb43449065cd25))
+* throw error and exit when `package.json` not found ([#27](https://github.com/xbinaryx/create-config/issues/27)) ([dbd5e34](https://github.com/xbinaryx/create-config/commit/dbd5e34b96995d4732442783689f868aabbbb819))
+* upgrade esmock v1.7.0 ([#5](https://github.com/xbinaryx/create-config/issues/5)) ([5cb3a94](https://github.com/xbinaryx/create-config/commit/5cb3a941ac90e1aaa58ca5c1d0c4dcf196167355))
+* use @eslint/compat to fix eslint v9 + react plugin ([#113](https://github.com/xbinaryx/create-config/issues/113)) ([61a385e](https://github.com/xbinaryx/create-config/commit/61a385ebf2bc2d57074614160210530c7dfb04b9))
+* use `--force` to install eslint v9 + tseslint ([#118](https://github.com/xbinaryx/create-config/issues/118)) ([27a207e](https://github.com/xbinaryx/create-config/commit/27a207ec209500da88a95f8c50dece16ae0f072b))
+* use correct import path for semver ([#165](https://github.com/xbinaryx/create-config/issues/165)) ([ef6fa23](https://github.com/xbinaryx/create-config/commit/ef6fa23d3673a5cdb01fcb06ac5bc15af5dfecb3))
+* use eslint-config-airbnb-base by default ([#92](https://github.com/xbinaryx/create-config/issues/92)) ([627306a](https://github.com/xbinaryx/create-config/commit/627306a3bb09a6b5e2b52a856d6caa41cb629a3e)), closes [#87](https://github.com/xbinaryx/create-config/issues/87)
+* Wrong info about globally-installed copy of ESLint ([#18](https://github.com/xbinaryx/create-config/issues/18)) ([c8ba806](https://github.com/xbinaryx/create-config/commit/c8ba80657784f0076b6b247b24996df567058f43))
+
 ## [1.9.0](https://github.com/eslint/create-config/compare/v1.8.3...v1.9.0) (2025-05-20)
 
 
